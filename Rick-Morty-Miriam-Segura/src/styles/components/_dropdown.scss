@@ -1,0 +1,33 @@
+@use "../base/variables" as v;
+
+.dropdown {
+  height: 55px;
+  overflow: hidden;
+  width: 50%;
+  transition: all 0.1s ease-in;
+  margin-bottom: 10px;
+
+  img {
+    height: 30px;
+  }
+
+  .dark-blue {
+    color: v.$text_darkblue;
+    font-weight: 700;
+  }
+
+  .grey {
+    color: v.$text_grey;
+  }
+}
+
+.dropdown-expanded {
+  height: fit-content;
+  border: 2px solid v.$active_link;
+}
+
+@media (max-width: 768px) {
+  .dropdown {
+    width: 100%;
+  }
+}

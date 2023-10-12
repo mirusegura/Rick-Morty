@@ -1,0 +1,45 @@
+@use "../base/variables" as v;
+
+.character_card {
+  border: 3px solid v.$border_card !important;
+  cursor: pointer;
+
+  &_img {
+    border-radius: 5px;
+  }
+
+  .title {
+    color: v.$text_darkblue;
+    font-size: clamp(14px, 1rem, 17px);
+    font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  p {
+    text-align: center;
+    color: v.$text_grey;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.5px;
+
+    .status {
+      font-weight: 700;
+      text-transform: capitalize;
+      color: v.$unknow;
+    }
+
+    .alive {
+      color: v.$alive;
+    }
+
+    .dead {
+      color: v.$dead;
+    }
+  }
+}

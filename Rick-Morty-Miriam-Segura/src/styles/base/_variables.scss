@@ -1,0 +1,13 @@
+// colors
+$text_darkblue: rgba(34, 50, 99, 1);
+$text_grey: rgba(144, 152, 177, 1);
+$border_card: rgba(246, 247, 248, 1);
+$alive: rgba(72, 222, 150, 1);
+$unknow: rgba(72, 186, 222, 1);
+$dead: rgba(251, 113, 129, 1);
+$active_link: rgba(51, 160, 255, 1);
+$inactive_link: rgba(38, 38, 38, 1);
+$dark: rgba(34, 38, 42, 1);
+
+// padding
+$p_col: clamp(13px, 2vw, 20px) !important;

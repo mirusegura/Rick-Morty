@@ -1,0 +1,35 @@
+@use "../base/variables" as v;
+.home {
+  &_col {
+    padding: v.$p_col;
+  }
+}
+
+.load_button {
+  cursor: pointer;
+  color: v.$active_link;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+
+  p {
+    width: fit-content;
+    padding-bottom: 5px;
+    border-bottom: 3px solid v.$active_link;
+  }
+}
+
+hr {
+  width: 50%;
+  height: 5px;
+  opacity: 50%;
+  background-color: rgba(209, 214, 232, 1);
+  border-top: 0 !important;
+  margin: auto !important;
+  border-radius: 5px;
+}
+.pointer {
+  cursor: pointer;
+}
